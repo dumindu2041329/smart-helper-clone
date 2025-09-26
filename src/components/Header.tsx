@@ -6,12 +6,12 @@ const Header = () => {
     <header className="w-full px-6 py-4">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
+        <Link to="/" className="flex items-center space-x-2 cursor-pointer">
           <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
             <span className="text-white font-bold text-sm">AI</span>
           </div>
           <span className="text-xl font-semibold text-foreground">AI Tools Hub</span>
-        </div>
+        </Link>
 
         {/* Navigation */}
         <div className="hidden md:flex items-center space-x-8">
