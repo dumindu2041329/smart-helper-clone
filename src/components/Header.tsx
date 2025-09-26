@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -14,15 +15,24 @@ const Header = () => {
 
         {/* Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#" className="text-foreground/80 hover:text-foreground transition-smooth">
+          <Link 
+            to="/" 
+            className="text-foreground/80 hover:text-foreground transition-smooth"
+          >
             Free APIs
-          </a>
-          <a href="#" className="text-foreground/80 hover:text-foreground transition-smooth">
+          </Link>
+          <Link 
+            to="/cursor-steps" 
+            className="text-foreground/80 hover:text-foreground transition-smooth"
+          >
             Cursor
-          </a>
-          <a href="#" className="text-foreground/80 hover:text-foreground transition-smooth">
+          </Link>
+          <Link 
+            to="/warp-steps" 
+            className="text-foreground/80 hover:text-foreground transition-smooth"
+          >
             Warp
-          </a>
+          </Link>
           <a href="#" className="text-foreground/80 hover:text-foreground transition-smooth">
             Windsurf
           </a>
